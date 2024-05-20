@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../assets/pixil-frame-0.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.botones {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+  
+.botones button {
+    padding: 10px 20px;
+    margin: 20px 45px;
+    font-size: 30px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 900;
+    color: black;
+    transition: transform 0.4s ease;
+    border-radius: 150px;
+    background-color: rgb(38, 187, 50);
+    box-shadow: 0px 0px 20px #000000a7;
+}
+
+button:disabled {
+    padding: 10px 20px;
+    margin: 20px 45px;
+    font-size: 30px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 900;
+    color: black;
+    transition: transform 0.4s ease;
+    border-radius: 150px;
+    background-color: rgb(107, 138, 110);
+    box-shadow: 0px 0px 20px #000000a7;
+}
+
+.imagen-juego {
+    display:flex;
+    margin: 20px;
+}
+img {
+    height: 100px;
+    top: 0;
+    opacity: 90%;
+    left: 50%;
+}
+
+.puntuacion {
+    color: black;
+    font-family: Cambria;
+    font-size: 85%;
+}
+
+.max-puntuacion {
+    color: black;
+    font-size: 85%;
+    font-family: Cambria;
+}
+
+.wrap {
+    width: 400px;
+    height: 452px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #06cc34;
+    border-radius: 18px 18px 8px 8px;
+    box-shadow: 0px 0px 70px 0px rgba(0, 255, 64, 0.556);
+}
+
+.detalles-juego {
+    color: #b8c6dc;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tablero-juego {
+    height: 400px;
+    width: 400px;
+    background-color: #212837;
+    display: grid;
+    grid-template: repeat(20, 1fr) / repeat(20, 1fr);
+}
+
+
+.cabeza-arriba {
+    background-image:url(../assets/cabeza-arriba.svg);
+}
+
+.cabeza-derecha {
+    background-image:url(../assets/cabeza-derecha.svg);
+}
+
+.cabeza-abajo {
+    background-image:url(../assets/cabeza-abajo.svg);
+}
+
+.cabeza-izquierda {
+    background-image:url(../assets/cabeza-izquierda.svg);
+}
+
+.cuerpo {
+    background-color: rgb(0, 218, 0);
+}
+
+.fruta {
+    background-image:url(../assets/manzana.png);
+}
